@@ -6,16 +6,29 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: linear-gradient(135deg, #f5e6cc, #8b5bb7);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 body {
     font-family: 'SF Pro Display', Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
+    min-height: 100vh;
     padding: 40px 0;
-    background: linear-gradient(135deg, #f5e6cc, #8b5bb7);
+    margin: 0 auto;
 }
+
 
 .fade-in {
     opacity: 0;
@@ -124,9 +137,6 @@ h1 {
 .button:hover::after {
     transform: translateX(5px);
 }
-
-
-
 
 .modal {
     display: none;
@@ -256,7 +266,10 @@ h1 {
 
     .telegram-buttons {
         position: static;
-        margin-top: 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .telegram-button {
@@ -303,10 +316,11 @@ h1 {
     }
 
     .telegram-buttons {
-        right: 10px;
-        bottom: 10px;
+        position: static;
+        margin: 0 auto;
+        display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
     }
 
     .telegram-button {
@@ -347,14 +361,14 @@ h1 {
     }
 
     .telegram-buttons {
+        position: static;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .telegram-button {
         margin: 5px 0;
     }
 }
-
-
-
-
