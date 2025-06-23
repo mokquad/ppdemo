@@ -176,6 +176,28 @@ body {
         </ol>
         <p> Thanks to MWR (Fit_Mycologist_8247). </p>
     </div>
+</div>
+	<div class="nonui-content">
+        <h1>How to change InternalUI on NonUI or NonUI on InternalUI (FullInternal)</h1>
 
+        <p>How to change InternalUI on NonUI:</p>
+
+        <ol class="guide-list">
+            <li> launchctl unload -w /System/Library/LaunchDaemons/com.apple.SpringBoard.plist</li>
+			<li> launchctl load -w /AppleInternal/Applications/SwitchBoard.app/com.apple.SwitchBoard.plist</li>
+           <li> <strong>ENJOY!</strong></li>
+        </ol>
+		
+		<p>How to change NonUI on Internal:</p>
+		
+		 <ol class="guide-list">
+            <li> launchctl unload -w /AppleInternal/Applications/SwitchBoard.app/com.apple.SwitchBoard.plist </li>
+			<li> launchctl load -w /System/Library/LaunchDaemons/com.apple.SpringBoard.plist</li>
+           <li> <strong>ENJOY!</strong></li>
+        </ol>
+		
+		<p> Thanks to FujiExpo. </p>
+		
+    </div>
 </body>
 </html>
